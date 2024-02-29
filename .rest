@@ -1,0 +1,31 @@
+
+# POST http://localhost:5020/?url=https://bbp.api.rentmanager.com/Authentication/AuthorizeUser
+# Content-Type: application/json
+
+# {
+#  "username": "API",
+#  "password": "Bushburg-AP1"
+# }
+
+# GET http://localhost:5020/?url=https://bbp.api.rentmanager.com/Terms
+# Content-Type: application/json
+# X-RM12Api-ApiToken: f1IDEWO5HOv2YA7PVt2IZbIC296gYvJ9extrR-_BHoFzXVQ-Ty-VuNQe1jyXatD1agSWFx88Kb9Pa9Vxd-lS_vJ7DI88vktTzBQjmn-fuAo=
+
+
+
+# D1	total calls made that week to tenants that owe money. filter by building,	/Tenants/HistoryCalls?filters=HistoryDate,gt,2024-02-16T11%3A24%3A00;Tenant.PropertyID,bt,(0%2C40)						
+# D2		N/A						
+# D3	total amount of tennant that have  OPEN balences the property id will be selected in a dropdown box. 	/Tenants?filters=OpenBalance,ne,0;PropertyID,eq,4&fields=LastNameFirstName,OpenBalance,PropertyID						
+# A2	the total amount of tenants that have open balances under 1000 the property id will be selected in a dropdown box. 	/Tenants?filters=PropertyID,bt,(1%2C18);OpenBalance,bt,(1%2C999)&fields=LastNameFirstName,OpenBalance,PropertyID						
+# A3	total amount tenants open balances under 1000	/Tenants?filters=PropertyID,bt,(1%2C18);OpenBalance,bt,(1%2C999)&fields=LastNameFirstName,OpenBalance,PropertyID						
+# A4	Average open balence under 1000	/Tenants?filters=PropertyID,bt,(1%2C18);OpenBalance,bt,(1%2C999)&fields=LastNameFirstName,OpenBalance,PropertyID						
+# A1	A button that when pressed  displays a grid with the property name from the dropdown box, the last name first name,open balence	/Tenants?filters=PropertyID,bt,(1%2C18);OpenBalance,bt,(1%2C999)&fields=LastNameFirstName,OpenBalance,PropertyID						
+# B2	the total amount of tenants that have open balances bet 1000-10000 the property id will be selected in a dropdown box. 	/Tenants?filters=PropertyID,bt,(1%2C18);OpenBalance,bt,(1000%2C10000)&fields=LastNameFirstName,OpenBalance,PropertyID						
+# B3	total amount tenants open balances bet 1000-10000	/Tenants?filters=PropertyID,bt,(1%2C18);OpenBalance,bt,(1000%2C10000)&fields=LastNameFirstName,OpenBalance,PropertyID						
+# B4	Average open balance bet 1000-10000	/Tenants?filters=PropertyID,bt,(1%2C18);OpenBalance,bt,(1000%2C10000)&fields=LastNameFirstName,OpenBalance,PropertyID						
+# B1	A button that when pressed  displays a grid with the property name from the dropdown box, the last name first name,open balence	/Tenants?filters=PropertyID,bt,(1%2C18);OpenBalance,bt,(1000%2C10000)&fields=LastNameFirstName,OpenBalance,PropertyID						
+# C2	the total amount of tenants that have open balances over 10000 the property id will be selected in a dropdown box. 	/Tenants?filters=PropertyID,bt,(1%2C18);OpenBalance,gt,10000&fields=LastNameFirstName,OpenBalance,PropertyID						
+# C3	total amount tenants open balances over 10000	/Tenants?filters=PropertyID,bt,(1%2C18);OpenBalance,gt,10000&fields=LastNameFirstName,OpenBalance,PropertyID						
+# C4	Average open balance over 10000	/Tenants?filters=PropertyID,bt,(1%2C18);OpenBalance,gt,10000&fields=LastNameFirstName,OpenBalance,PropertyID						
+# C1	A button that when pressed  displays a grid with the property name from the dropdown box, the last name first name,open balence	/Tenants?filters=PropertyID,bt,(1%2C18);OpenBalance,gt,10000&fields=LastNameFirstName,OpenBalance,PropertyID
+
